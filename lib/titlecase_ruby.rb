@@ -4,11 +4,7 @@ def title_case(sentence)
   sentenceArray = sentence.split()
   sentenceArray.each do |word| 
     if exceptions.include?(word)
-      # if word == word
-      #   title << word.capitalize()
-      # else
-        title << word + " " 
-      # end
+      title << word + " " 
     else
       title << word.capitalize() + " "
     end
